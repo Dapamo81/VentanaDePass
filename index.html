@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password</title>
     <link href = "css/style.css" rel="stylesheet" type="text/css">
-    <script src="javaScript/entrada.js" defer></script>
+    <script src="js/funcion.js" defer></script>
 </head>
 <body>
     <header>
@@ -16,6 +16,24 @@
        
     </header>
     <section >
+       
+        <button id="abrirModal">Acceso</button>
+
+        <div id="miModal" class="modal">
+            <div class="modal-contenido">
+            <span class="cerrar">&times;</span>
+            <label for="user">Introduce tu contraseña:</label>
+            <input type="text" id="user" required>
+            <br>
+            <label for="pass">Introduzca el Pass:</label>
+            <input type="text" id="pass" required>
+            <br>
+            <button id="Confirmar">Confirmar</button>
+            <p id="interaccion"></p>
+
+            
+            </div>
+        </div>
        
 
     </section>
