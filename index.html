@@ -17,8 +17,25 @@
     </header>
     <section >
        
-        
-        <label for="user">Introduce tu contraseña:</label>
+        <button id="abrirModal">Iniciar Sesión</button>
+        <div id="miModal" class="modal">
+            <span class="Cerrar" id="cerrarModal">&times;</span>
+            <h2>Login</h2>
+            <label for="user">Introduzca el Usuario:</label>
+            <input type="text" id="user" required>
+            <br>
+            <label for="pass">Introduzca el Pass:</label>
+            <input type="text" id="pass" required>
+            <br>
+            <button id="confirmar" onclick="comprabarPass()">Confirmar</button>
+            <p id="interaccion"></p>
+
+        </div>
+<!--
+    Opcion sin abrir una venana aparte.        
+-->
+
+        <!-- <label for="user">Introduce tu contraseña:</label>
         <input type="text" id="user" required>
         <br>
         <label for="pass">Introduzca el Pass:</label>
@@ -26,14 +43,9 @@
         <br>
         <button onclick="comprabarPass()">Confirmar</button>
         <p id="interaccion"></p>
+         -->
         
         
-        <!-- <div id="miModal" class="modal">
-            <button id="abrirModal">Acceso</button>
-            <div class="modal-contenido">
-            </div>
-        </div> -->
-       
 
     </section>
     <footer>

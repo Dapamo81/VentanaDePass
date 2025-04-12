@@ -1,33 +1,43 @@
+let intentos = 3
 /**
  * Para abrir la ventana
  */
-// const modal = document.getElementById("miModal");
-// const btn = document.getElementById("abrirModal");
-// const span = document.querySelector(".cerrar");
+const modal = document.getElementById("miModal");
+const abrirModal = document.getElementById("abrirModal");
+const cerrarModal = document.getElementById("cerrarModal");
+const botonConfirmar = document.getElementById("Confirmar");
+const interaccion = document.getElementById("interaccion");
 
-// btn.onclick = function() {
-//   modal.style.display = "block";
-// }
+abrirModal.onclick = function () {
+    modal.style.display = "block";
+    intentosRestantes = 3;
+    interaccion.innerHTML = "";
+    interaccion.style.color = "red";
+    document.getElementById("user").value = "";
+    document.getElementById("pass").value = "";
+    botonConfirmar.disabled = false;
+  };
 
-// span.onclick = function() {
-//   modal.style.display = "none";
-// }
+  cerrarModal.onclick = function () {
+    modal.style.display = "none";
+  };
 
-// window.onclick = function(event) {
-//   if (event.target === modal) {
-//     modal.style.display = "none";
-//   }
-// }
+  window.onclick = function (event) {
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  };
 
 /**
  * para comprobar el pass
  */
-let intentos = 3
+
 
 function comprabarPass(){
     let pass = document.getElementById("pass").value;
     let user = document.getElementById("user").value;
     let interaccion = document.getElementById("interaccion");
+
     const contrasena = "1234";
     const usuario = "Dani";
     
